@@ -1,0 +1,13 @@
+window_sizes 1800 945 450 1345 793 104
+
+diagrams
+  active  usecasediagram_ref 128125 // cas_utilisation_generateur_documentation
+    1076 634 100 A4 4 0
+end
+show_stereotypes
+selected 
+  package_ref 129 // conception_preliminaire_generateur_documentation
+open
+  usecaseview_ref 128125 // diagramme de cas d'utilisation
+end
+end
