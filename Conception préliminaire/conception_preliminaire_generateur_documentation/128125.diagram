@@ -11,46 +11,41 @@ classcanvas 131325 class_ref 128253 // SystemeExploitation
   xyz 726.2 269.6 2000
 end
 usecasecanvas 133885 usecase_ref 128637 // Creer la documentation
-  xyzwh 119 173.2 3005 64 32 label_xy 95 205
+  xyzwh 119 173 3005 64 32 label_xy 95 205
 end
 usecasecanvas 134013 usecase_ref 128253 // Analyser projet
-  xyzwh 367.6 136.4 3005 64 32 label_xy 364 168
-end
-usecasecanvas 134269 usecase_ref 129021 // Generer la documentation
-  xyzwh 560.8 151.8 3005 65 33 label_xy 530 183
+  xyzwh 367 136 3005 64 32 label_xy 364 168
 end
 usecasecanvas 134781 usecase_ref 129405 // Exporter documentation
-  xyzwh 387.2 255 3005 64 32 label_xy 361 287
+  xyzwh 387 255 3005 64 32 label_xy 361 287
 end
 usecasecanvas 135165 usecase_ref 128509 // Enregistrer un fichier
-  xyzwh 595.8 241.8 3005 64 32 label_xy 578 274
+  xyzwh 595 241 3005 64 32 label_xy 578 274
 end
-textcanvas 136189 "<<include>>"
-  xyzwh 471.7 144.5 3011 65 13
 textcanvas 136317 "<<extend>>"
-  xyzwh 307.9 260.5 3011 65 13
+  xyzwh 307 260 3011 65 13
 textcanvas 136445 "<<include>>"
-  xyzwh 494.9 264.5 3011 65 13
+  xyzwh 494 264 3011 65 13
 usecasecanvas 136829 usecase_ref 129533 // Afficher la documentation
-  xyzwh 234 276.4 3010 64 32 label_xy 205 308
+  xyzwh 234 276 3010 64 32 label_xy 205 308
 end
 usecasecanvas 137597 usecase_ref 129661 // Imprimer la documentation
-  xyzwh 407.4 323.6 3005 64 32 label_xy 376 356
+  xyzwh 407 323 3005 64 32 label_xy 376 356
 end
 usecasecanvas 137725 usecase_ref 129789 // Partager la documentation
-  xyzwh 333.4 398.4 3005 64 32 label_xy 302 430
+  xyzwh 333 398 3005 64 32 label_xy 302 430
 end
 textcanvas 138109 "<<extend>>"
-  xyzwh 331.6 323.4 3016 66 13
+  xyzwh 331 323 3016 66 13
 textcanvas 138237 "<<extend>>"
-  xyzwh 260.8 369.3 3016 66 13
+  xyzwh 260 369 3016 66 13
 usecasecanvas 139901 usecase_ref 129917 // Choisir une imprimante
-  xyzwh 576.8 328.4 3005 64 32 label_xy 555 360
+  xyzwh 576 328 3005 64 32 label_xy 555 360
 end
 textcanvas 140157 "<<include>>"
-  xyzwh 495.4 320.6 3011 65 13
+  xyzwh 495 320 3011 65 13
 usecasecanvas 140413 usecase_ref 130045 // Choisir une messagerie
-  xyzwh 520 410.4 3005 64 32 label_xy 497 442
+  xyzwh 520 410 3005 64 32 label_xy 497 442
 end
 classcanvas 140541 class_ref 128381 // ServeurMessagerie
   simpleclassdiagramsettings end
@@ -58,14 +53,14 @@ classcanvas 140541 class_ref 128381 // ServeurMessagerie
 end
 textcanvas 140925 "<<include>>
 "
-  xyzwh 436 400.4 3011 66 18
+  xyzwh 436 400 3011 66 18
 usecasecanvas 141053 usecase_ref 128125 // Importer projet
-  xyzwh 247.2 146.4 3005 64 32 label_xy 242 178
+  xyzwh 247 146 3005 64 32 label_xy 242 178
 end
 textcanvas 141565 "<<include>>"
-  xyzwh 180.8 154 3011 65 13
+  xyzwh 180 154 3011 65 13
 textcanvas 141693 "<<include>>"
-  xyzwh 306.7 129.5 3011 65 13
+  xyzwh 306 129 3011 65 13
 line 135293 ----
   from ref 135165 z 3006 to ref 131325
 line 137341 ----
@@ -81,9 +76,6 @@ simplerelationcanvas 138621 simplerelation_ref 130045
 end
 simplerelationcanvas 139261 simplerelation_ref 130173
   from ref 137725 z 3011 to ref 136829
-end
-simplerelationcanvas 139773 simplerelation_ref 130685
-  from ref 134269 z 3006 to ref 134013
 end
 simplerelationcanvas 140029 simplerelation_ref 130813
   from ref 139901 z 3006 to ref 137597
