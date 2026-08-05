@@ -1,6 +1,6 @@
 format 224
 "conception_preliminaire_generateur_documentation"
-  revision 2
+  revision 4
   modified_by 125 "Kévin"
 
 
@@ -146,7 +146,7 @@ format 224
       end
     end
 
-    usecase 128509 "Enregistrer un fichier"
+    usecase 128509 "Enregistrer la documentation"
       
       usecasediagramsettings end
       
@@ -170,6 +170,11 @@ format 224
       simplerelation 129789
 	-_->
 	  on usecase_ref 129405 // Exporter documentation
+      end
+
+      simplerelation 144381
+	-_->
+	  on usecase_ref 129533 // Afficher la documentation
       end
     end
 
@@ -300,10 +305,15 @@ format 224
        end
       simplerelation 128893
 	-_->
-	  on usecase_ref 128509 // Enregistrer un fichier
+	  on usecase_ref 128509 // Enregistrer la documentation
       end
 
       simplerelation 129917
+	-_->
+	  on usecase_ref 129533 // Afficher la documentation
+      end
+
+      simplerelation 137725
 	-_->
 	  on usecase_ref 129533 // Afficher la documentation
       end
@@ -464,6 +474,33 @@ format 224
       explicit_switch_type ""
       mysql_decl ""
       
+    end
+
+    usecase 136573 "Supprimer la documentation"
+      
+      usecasediagramsettings end
+      
+      sequencediagramsettings end
+      
+      collaborationdiagramsettings end
+      
+      classdiagramsettings member_max_width 0 end
+      
+      classcompositediagramsettings end
+      
+      objectdiagramsettings end
+      
+      objectcompositediagramsettings end
+      
+      statediagramsettings
+       end
+      
+      activitydiagramsettings
+       end
+      simplerelation 137853
+	-_->
+	  on usecase_ref 129533 // Afficher la documentation
+      end
     end
   end
 end
