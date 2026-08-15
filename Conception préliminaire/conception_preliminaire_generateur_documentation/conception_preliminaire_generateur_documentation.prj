@@ -1,7 +1,7 @@
 format 224
 "conception_preliminaire_generateur_documentation"
-  revision 4
-  modified_by 125 "Kévin"
+  revision 6
+  modified_by 127 "kevin"
 
 
   
@@ -501,6 +501,94 @@ format 224
 	-_->
 	  on usecase_ref 129533 // Afficher la documentation
       end
+    end
+  end
+
+  classview 128127 "diagramme de classe + diagramme de sequence"
+    
+    classdiagramsettings member_max_width 0 end
+    
+    classcompositediagramsettings end
+    
+    collaborationdiagramsettings end
+    
+    objectdiagramsettings end
+    
+    objectcompositediagramsettings end
+    
+    sequencediagramsettings end
+    
+    statediagramsettings
+     end
+    
+    
+    activitydiagramsettings
+     end
+    sequencediagram 128127 "Importer un projet"
+      sequencediagramsettings end
+      overlapping_bars size A4
+    end
+
+    sequencediagram 134655 "Analyser le projet"
+      sequencediagramsettings end
+      overlapping_bars size A4
+    end
+  end
+
+  classview 128255 "classes + acteur"
+    
+    classdiagramsettings member_max_width 0 end
+    
+    classcompositediagramsettings end
+    
+    collaborationdiagramsettings end
+    
+    objectdiagramsettings end
+    
+    objectcompositediagramsettings end
+    
+    sequencediagramsettings end
+    
+    statediagramsettings
+     end
+    
+    
+    activitydiagramsettings
+     end
+    class 128127 "Ihm"
+      visibility package 
+      cpp_decl ""
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+    end
+
+    class 128255 "Controle"
+      visibility package 
+      cpp_decl ""
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+    end
+
+    class 128383 "ModuleAnalyse"
+      visibility package 
+      cpp_decl ""
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
     end
   end
 end

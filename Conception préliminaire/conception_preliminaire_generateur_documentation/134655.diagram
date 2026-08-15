@@ -1,0 +1,107 @@
+format 224
+
+classinstance 128127 class_ref 128255 // Controle
+  name ""   xyz 140 4 2000 life_line_z 2000
+classinstance 128255 class_ref 128383 // ModuleAnalyse
+  name ""   xyz 319 4 2000 life_line_z 2000
+textcanvas 128767 "GenerationDocumentation(projet)"
+  xyzwh 185 43 2020 168 17
+textcanvas 129151 "AnalyseProjet(projet)"
+  xyzwh 399 87 2000 104 13
+fragment 129919 "alt"
+  xyzwh 10 132 1985 605 345
+  separator 2763
+end
+textcanvas 130687 "err = impossible de lire les fichiers"
+  xyzwh 380 136 2030 163 13
+textcanvas 131071 "Notifie(err)"
+  xyzwh 234 162 2030 53 13
+textcanvas 131583 "documentations"
+  xyzwh 416 232 2020 76 13
+textcanvas 132735 "VerificationDocumentation(documentations)"
+  xyzwh 397 261 2030 216 13
+textcanvas 133247 "err = impossible de lire les documentations"
+  xyzwh 197 316 2020 156 27
+textcanvas 133375 "documentations"
+  xyzwh 214 395 2020 87 20
+fragment 133503 "alt"
+  xyzwh 87 310 1990 412 137
+  separator 5000
+end
+textcanvas 133631 "[le module d'analyse n'arrive pas a lire les fichiers]"
+  xyzwh 18 158 2000 145 43
+textcanvas 134143 "[le module d'analyse a reussit a lire les fichiers]"
+  xyzwh 17 238 2000 149 31
+durationcanvas 128383 classinstance_ref 128127 // :Controle
+  xyzwh 163 55 2010 11 153
+  overlappingdurationcanvas 130815
+    xyzwh 169 173 2020 11 26
+  end
+end
+durationcanvas 128511 classinstance_ref 128255 // :ModuleAnalyse
+  xyzwh 357 54 2010 11 139
+  overlappingdurationcanvas 130303
+    xyzwh 363 146 2020 11 25
+  end
+end
+durationcanvas 131199 classinstance_ref 128255 // :ModuleAnalyse
+  xyzwh 357 244 2015 11 57
+  overlappingdurationcanvas 132479
+    xyzwh 363 261 2020 11 25
+  end
+end
+durationcanvas 132863 classinstance_ref 128255 // :ModuleAnalyse
+  xyzwh 357 408 2015 11 29
+end
+durationcanvas 132991 classinstance_ref 128127 // :Controle
+  xyzwh 163 408 2015 11 26
+end
+durationcanvas 133759 classinstance_ref 128255 // :ModuleAnalyse
+  xyzwh 357 323 2010 11 40
+end
+durationcanvas 133887 classinstance_ref 128127 // :Controle
+  xyzwh 163 323 2010 11 34
+end
+lostfoundmsgsupport 130047 xyz 543 101 2020
+lostfoundmsgsupport 130431 xyz 544 148 2025
+lostfoundmsgsupport 131327 xyz 541 246 2015
+msg 128639 asynchronous
+  from durationcanvas_ref 128383
+  to durationcanvas_ref 128511
+  yz 56 2015 unspecifiedmsg
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+msg 130175 lost_asynchronous
+  from durationcanvas_ref 128511
+  to lostfoundmsgsupport_ref 130047
+  yz 99 2020 unspecifiedmsg
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+msg 130559 found_asynchronous
+  from lostfoundmsgsupport_ref 130431
+  to durationcanvas_ref 130303
+  yz 146 2025 unspecifiedmsg
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+msg 130943 asynchronous
+  from durationcanvas_ref 128511
+  to durationcanvas_ref 130815
+  yz 173 2025 unspecifiedmsg
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+msg 131455 found_asynchronous
+  from lostfoundmsgsupport_ref 131327
+  to durationcanvas_ref 131199
+  yz 244 2015 unspecifiedmsg
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+reflexivemsg 132607 asynchronous
+  to durationcanvas_ref 132479
+  yz 262 2025 unspecifiedmsg
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+msg 133119 return
+  from durationcanvas_ref 132863
+  to durationcanvas_ref 132991
+  yz 408 2015 unspecifiedmsg
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+msg 134015 return
+  from durationcanvas_ref 133759
+  to durationcanvas_ref 133887
+  yz 336 2015 unspecifiedmsg
+  show_full_operations_definition default show_class_of_operation default drawing_language default show_context_mode default
+end

@@ -1,0 +1,13 @@
+window_sizes 1366 697 172 1189 547 104
+
+diagrams
+  active  sequencediagram_ref 134655 // Analyser le projet
+    1189 547 100 A4 0 0
+end
+show_stereotypes
+selected class_ref 128383 // ModuleAnalyse
+open
+  classview_ref 128127 // diagramme de classe + diagramme de sequence
+  classview_ref 128255 // classes + acteur
+end
+end
