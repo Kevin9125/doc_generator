@@ -1,6 +1,6 @@
 format 224
 "conception_preliminaire_generateur_documentation"
-  revision 6
+  revision 7
   modified_by 127 "kevin"
 
 
@@ -533,6 +533,16 @@ format 224
       sequencediagramsettings end
       overlapping_bars size A4
     end
+
+    sequencediagram 141311 "AfficherLaDocumentation"
+      sequencediagramsettings end
+      overlapping_bars size A4
+    end
+
+    classdiagram 141183 "Application"
+      classdiagramsettings member_max_width 0 end
+      size A4
+    end
   end
 
   classview 128255 "classes + acteur"
@@ -586,6 +596,42 @@ format 224
       php_decl ""
       python_2_2 python_decl ""
       idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+    end
+
+    class 134911 "Documentation"
+      visibility package 
+      cpp_decl ""
+      java_decl ""
+      php_decl ""
+      python_2_2 python_decl ""
+      idl_decl ""
+      explicit_switch_type ""
+      mysql_decl ""
+      
+      classrelation 128127 // <generalisation>
+	relation 128127 ---|>
+	  a public
+	    classrelation_ref 128127 // <generalisation>
+	  b parent class_ref 135039 // Obervateur
+      end
+    end
+
+    class 135039 "Obervateur"
+      visibility package stereotype "interface"
+      cpp_decl ""
+      java_decl "${comment}${@}${visibility}${static}interface ${name}${extends} {
+${members}}
+"
+      php_decl "${comment}interface ${name}${extends} {
+${members}}
+"
+      python_2_2 python_decl ""
+      idl_decl "${comment}${abstract}${local}interface ${name}${inherit} {
+${members}};
+"
       explicit_switch_type ""
       mysql_decl ""
       

@@ -1,13 +1,15 @@
 window_sizes 1366 697 172 1189 547 104
 
 diagrams
-  active  sequencediagram_ref 134655 // Analyser le projet
+  sequencediagram_ref 141311 // AfficherLaDocumentation
+    951 437 100 A4 0 0
+  active  classdiagram_ref 141183 // Application
     1189 547 100 A4 0 0
 end
 show_stereotypes
-selected class_ref 128383 // ModuleAnalyse
+selected class_ref 135039 // Obervateur
 open
   classview_ref 128127 // diagramme de classe + diagramme de sequence
-  classview_ref 128255 // classes + acteur
+  class_ref 135039 // Obervateur
 end
 end
