@@ -20,7 +20,7 @@ def CreationDonneesEntrainement(nb_recurence: int):
 
     #Initialisation
     API_KEY = ""
-    API = "https://openrouter.ai/api/v1/chat/completions"
+    API = ""
 
     #analyseur = AnalyseurCode(["py"])
     dict_fichier = {
