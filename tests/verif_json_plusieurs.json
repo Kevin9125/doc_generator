@@ -1,0 +1,63 @@
+{
+	"test1.py": {
+		"Test": {
+			"attribut": {
+				"attribut1": 0,
+				"attribut2": 2
+			},
+
+			"methode": {
+				"__init__": {
+					"arguments": [ "self" ],
+					"retour": "None"
+				},
+
+				"test_methode": {
+					"arguments": [ "self" ],
+					"retour": "None"
+				}
+			}
+		},
+
+		"Test12": {
+			"attribut": {
+				"attribut1": 0,
+				"attribut2": 2
+			},
+
+			"methode": {
+				"__init__": {
+					"arguments": [ "self" ],
+					"retour": "None"
+				},
+
+				"test_methode": {
+					"arguments": [ "self" ],
+					"retour": "None"
+				}
+			}
+		}
+	},
+
+	"test2.py": {
+
+		"Test": {
+			"attribut": {
+				"attribut1": 0,
+				"attribut2": 2
+			},
+
+			"methode": {
+				"__init__": {
+					"arguments": [ "self" ],
+					"retour": "None"
+				},
+
+				"test_methode": {
+					"arguments": [ "self" ],
+					"retour": "None"
+				}
+			}
+		}
+	}
+}
