@@ -19,7 +19,7 @@ def ParseResponse(str_a_parse: str) -> tuple[str, str]:
 def CreationDonneesEntrainement(nb_recurence: int):
 
     #Initialisation
-    API_KEY = "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"
+    API_KEY = ""
     API = "https://openrouter.ai/api/v1/chat/completions"
 
     #analyseur = AnalyseurCode(["py"])
